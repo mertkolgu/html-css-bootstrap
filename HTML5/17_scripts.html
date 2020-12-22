@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Javascript</title>
+</head>
+
+<body>
+
+    <button type="button" onclick="time()"> Tarih ve zamanı görmek için tıkla</button>
+    <p id="test"></p>
+    <hr>
+
+    <p id="yazi">Değişecek yazı</p>
+    <button type="button" onclick="degistir()">Bana tıkla yazıyı değiştireyim</button>
+
+    <script>
+        function time() {
+            document.getElementById('test').innerHTML = Date();
+        }
+
+        function degistir() {
+            document.getElementById('yazi').style.fontSize = "25px";
+            document.getElementById('yazi').style.color = "red";
+            document.getElementById('yazi').style.backgroundColor = "yellow";
+            document.getElementById('yazi').innerHTML = "Ben çok değiştim..."
+        }
+    </script>
+
+    <noscript>Tarayıcınız JavaScript desteklemiyor.</noscript>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Tables</title>
+    <style>
+        caption {
+            font-size: 32px;
+            border-top: 2px solid red;
+            border-right: 2px solid red;
+            border-left: 2px solid red;
+        }
+
+        table,
+        #tablo1 td,
+        #tablo1 th {
+            border: 2px solid red;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table,
+        #tablo2 td,
+        #tablo2 th {
+            border: 2px solid red;
+            border-collapse: collapse;
+        }
+
+        #tablo1 tr:nth-child(odd) {
+            background-color: purple;
+        }
+
+        #tablo1 tr:nth-child(even) {
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="tablo1" style="width:100%">
+        <caption>Deneme Tablo</caption>
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+            <th>Yaş</th>
+            <th colspan="2">Adres</th>
+            <th>Resim</th>
+        </tr>
+        <tr>
+            <td>Mert</td>
+            <td>Kolğu</td>
+            <td>25</td>
+            <td>Antalya</td>
+            <td>Antalya</td>
+            <td><img src="img/workplace.jpg" alt="" style="width: 50px; height: 50px;"></td>
+        </tr>
+        <tr>
+            <td>Mert</td>
+            <td>Kolğu</td>
+            <td>25</td>
+            <td>Antalya</td>
+            <td>Antalya</td>
+            <td><img src="img/workplace.jpg" alt="" style="width: 50px; height: 50px;"></td>
+        </tr>
+        <tr>
+            <td>Mert</td>
+            <td>Kolğu</td>
+            <td>25</td>
+            <td>Antalya</td>
+            <td>Antalya</td>
+            <td><img src="img/workplace.jpg" alt="" style="width: 50px; height: 50px;"></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table id="tablo2" style="width: 100%">
+        <caption>İsimler ve Numaralar Tablosu</caption>
+        <tr>
+            <th>Ad</th>
+            <td>Mert Kolğu</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Telefon</th>
+            <td>123456</td>
+        </tr>
+        <tr>
+            <td>987984646</td>
+        </tr>
+        <tr>
+            <td>1648494131168468</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+<!--
+    Tag         Description
+    <table> 	Defines a table
+    <th>	    Defines a header cell in a table
+    <tr>	    Defines a row in a table
+    <td>	    Defines a cell in a table
+    <caption>	Defines a table caption
+    <colgroup>	Specifies a group of one or more columns in a table for formatting
+    <col>	    Specifies column properties for each column within a <colgroup> element
+    <thead>	    Groups the header content in a table
+    <tbody>	    Groups the body content in a table
+    <tfoot>	    Groups the footer content in a table
+-->

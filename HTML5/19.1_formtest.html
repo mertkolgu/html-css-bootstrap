@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Form Test</title>
+</head>
+
+<body>
+    <form action="kisi.php" method="POST" target="_blank">
+        <legend>KİŞİSEL BİLGİLER</legend><br>
+
+        <label for="ad">Ad: </label>
+        <input type="text" id="ad" name="ad" placeholder="Adınızı yazınız"><br><br>
+
+        <label for="soyad">Soyad: </label>
+        <input type="text" id="soyad" name="ad" placeholder="Soyadınızı yazınız"><br><br>
+
+        <label for="spor">Sevdiğiniz Spor: </label>
+
+        <input type="checkbox" name="futbol" id="futbol" value="futbol">
+        <label for="futbol">Futbol</label>
+
+        <input type="checkbox" name="basketbol" id="basketbol" value="basketbol">
+        <label for="basketbol">Basketbol</label>
+
+        <input type="checkbox" name="voleybol" id="voleybol" value="voleybol">
+        <label for="voleybol">Voleybol</label><br><br>
+
+        <label for="cinsiyet">Cinsiyet: </label>
+
+        <input type="radio" name="cinsiyet" id="erkek" value="erkek">
+        <label for="erkek">Erkek</label>
+
+        <input type="radio" name="cinsiyet" id="kadin" value="kadin">
+        <label for="kadin">Kadın</label><br><br>
+
+        <label for="soru">Güvenlik sorusu: "Türkiye'nin başkenti neresidir?"</label><br><br>
+
+        <input list="sehirler" name="il" id="il" placeholder="Lütfen bir şehir seçiniz...">
+        <datalist id="sehirler">
+            <option value="Ankara">
+            <option value="Bursa">
+            <option value="İzmir">
+            <option value="Antalya">
+        </datalist><br><br>
+
+        <input type="submit" value="Kayıt Ol">
+    </form>
+</body>
+
+</html>

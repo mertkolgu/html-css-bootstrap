@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Image & Areamap</title>
+</head>
+
+<body>
+    <img src="img/workplace.jpg" alt="Bilgisayar1" style="width: 100px; height: 100px; float: right;">
+    <img src="img/workplace.jpg" alt="Bilgisayar2" width="50" height="50"><br>
+
+    <img src="img/workplace.jpg" alt="Bilgisayar3" usemap="#pc3">
+    <map name="pc3">
+        <area shape="rect" coords="34,44,270,350" alt="bilgisayar" href="http://www.google.com">
+        <area shape="rect" coords="290,172,333,250" alt="telefon" href="http://www.apple.com">
+        <area shape="circle" coords="337,300,44" alt="kahve" onclick="buttonClick()">
+    </map>
+
+    <script>
+        function buttonClick() {
+            alert("kahveye tıkladın");
+        }
+    </script>
+</body>
+
+</html>

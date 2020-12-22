@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Links</title>
+</head>
+
+<body>
+    <!--
+    _self - Default. Opens the document in the same window/tab as it was clicked
+    _blank - Opens the document in a new window or tab
+    _parent - Opens the document in the parent frame
+    _top - Opens the document in the full body of the window
+    -->
+    <a href="https://www.mertkolgu.com" target="_blank" style="text-decoration: none;">Blog Sitem - 1</a>
+    <a href="https://www.mertkolgu.com" target="_parent">Blog Sitem - 2</a>
+    <a href="https://www.mertkolgu.com" target="_top">Blog Sitem - 3</a>
+    <a href="https://www.mertkolgu.com" target="_self">Blog Sitem - 4</a><br><br>
+
+    <a href="https://www.google.com" target="_blank">GOOGLE - Absolute URL</a><br><br>
+
+    <a href="08_htmlcss.html" target="_blank">CSS'e git - Relative URL</a><br><br>
+
+    <a href="https://github.com/" title="Buna tıkladığınız zaman GitHub'a gider">
+        <img src="img/workplace.jpg" alt="logo" style="width: 128px; height: 128px;">
+    </a><br><br>
+
+    <a href="mailto:mertkolgu@outlook.com">Bana mail at</a><br><br>
+
+    <button onclick="document.location='test.php'">Bana tıkla</button>
+</body>
+
+</html>

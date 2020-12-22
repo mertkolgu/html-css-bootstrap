@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Form Input Types</title>
+</head>
+
+<body>
+    <form action="deneme.php" method="post" oninput="output.value=parseInt(range.value)" novalidate>
+        <label for="isim">Type text: </label>
+        <input type="text" name="isim" id="isim" value="Mert Kolğu" readonly><br><br>
+
+        <label for="sifre">Type password: </label>
+        <input type="password" name="sifre" id="sifre"><br><br>
+
+        <label for="gonder">Type submit: </label>
+        <input type="submit" formaction="test.php"><br><br>
+
+        <label for="reset">Type reset: </label>
+        <input type="reset"><br><br>
+
+        <label for="button">Type button: </label>
+        <input type="button" onclick="alert('selam')" value="Bana tıkla"><br><br>
+
+        <label for="color">Type color: </label>
+        <input type="color" name="color"><br><br>
+
+        <label for="date">Type date: </label>
+        <input type="date" name="tarih" min="1970-01-01" max="2020-12-31"><br><br>
+
+        <label for="email">Type email: </label>
+        <input type="email" value="mert@mert.com" name="email" disabled><br><br>
+
+        <label for="file">Type file: </label>
+        <input type="file" name="file" multiple><br><br>
+
+        <label for="month">Type month: </label>
+        <input type="month" name="month"><br><br>
+
+        <label for="number">Type number: </label>
+        <input type="number" step="5" name="number" min="18" max="99"><br><br>
+
+        <label for="range">Type range: </label>
+        <input type="range" id="range" name="range" min="0" max="100" value="0">
+        <output for="range" name="output"></output><br><br>
+
+        <label for="search">Type search: </label>
+        <input type="search" size="10" maxlength="10" name="search" autofocus required><br><br>
+
+        <label for="tel">Type tel: </label>
+        <input type="tel" placeholder="555-555-55" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}"><br><br>
+
+        <label for="time">Type time: </label>
+        <input type="time" name="zaman"><br><br>
+
+        <label for="url">Type url: </label>
+        <input type="url" name="url" autocomplete><br><br>
+
+        <label for="week">Type week: </label>
+        <input type="week" name="week"><br><br>
+    </form>
+</body>
+
+</html>

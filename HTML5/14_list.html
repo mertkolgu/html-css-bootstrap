@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Lists</title>
+    <style>
+        #menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #menu li {
+            padding-left: 15px;
+            float: left;
+        }
+
+        #menuhori {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        #menuhori li {
+            float: left;
+        }
+
+        #menuhori li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        #menuhori li a:hover {
+            background-color: #111111;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ol type="1">
+        <li>mert</li>
+        <li>hasan</li>
+        <li>ali</li>
+    </ol>
+
+    <ol type="A">
+        <li>mert</li>
+        <li>hasan</li>
+        <li>ali</li>
+    </ol>
+
+    <ol type="a">
+        <li>mert</li>
+        <li>hasan</li>
+        <li>ali</li>
+    </ol>
+
+    <ol type="I">
+        <li>mert</li>
+        <li>hasan</li>
+        <li>ali</li>
+    </ol>
+
+    <ol type="i">
+        <li>mert</li>
+        <li>hasan</li>
+        <li>ali</li>
+    </ol>
+
+    <ol type="1" start="25">
+        <li>mert</li>
+        <li>hasan
+            <ol start="60">
+                <li>kolğu</li>
+            </ol>
+        </li>
+        <li>ali</li>
+    </ol>
+
+    <hr><br>
+
+    <ul id="menu">
+        <li>Ana Sayfa</li>
+        <li>İletişim</li>
+        <li>Hakkımızda</li>
+    </ul>
+
+    <ul style="list-style-type: disc;">
+        <li>Mert</li>
+        <li>Hasan</li>
+        <li>Ali</li>
+    </ul>
+
+    <ul style="list-style-type: square;">
+        <li>Mert</li>
+        <li>Hasan</li>
+        <li>Ali</li>
+    </ul>
+
+    <ul style="list-style-type: circle;">
+        <li>Mert</li>
+        <li>Hasan</li>
+        <li>Ali</li>
+    </ul>
+
+    <ul style="list-style-type: none;">
+        <li>Mert</li>
+        <li>Hasan
+            <ul style="list-style-type: square">
+                <li>Yılmaz</li>
+                <li>Yılmaz</li>
+                <li>Yılmaz</li>
+            </ul>
+        </li>
+        <li>Ali</li>
+    </ul>
+
+    <hr>
+
+    <dl>
+        <dt>Kalem</dt>
+        <dd>Yazı yazmayı sağlar.</dd>
+        <dt>Silgi</dt>
+        <dd>Silmeye yarar.</dd>
+    </dl>
+
+    <hr>
+
+    <ul id="menuhori">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</body>
+
+</html>
+
+<!--
+    Tag	    Description
+    <ul>	Defines an unordered list
+    <ol>	Defines an ordered list
+    <li>	Defines a list item
+    <dl>	Defines a description list
+    <dt>	Defines a term in a description list
+    <dd>	Describes the term in a description list
+-->
