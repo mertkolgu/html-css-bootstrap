@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 - Outline</title>
+    <style>
+        p {
+            outline-color: red;
+        }
+
+        .dotted {
+            border: 2px solid black;
+            outline-style: dotted;
+            outline-width: thin;
+        }
+
+        .dashed {
+            border: 2px solid blueviolet;
+            outline-style: dashed;
+            outline-width: medium;
+        }
+
+        .solid {
+            border: 2px solid blue;
+            outline-style: solid;
+            outline-width: 4px;
+        }
+
+        .double {
+            border: 2px solid purple;
+            outline-style: double;
+            outline-width: thick;
+        }
+
+        .groove {
+            outline-style: groove;
+            outline-color: aqua;
+        }
+
+        .ridge {
+            outline-style: ridge;
+        }
+
+        .inset {
+            outline-style: inset;
+        }
+
+        .outset {
+            outline: 5px outset yellow;
+        }
+
+        .para1 {
+            margin: 30px;
+            background-color: yellow;
+            border: 1px solid black;
+            outline: 1px solid red;
+            outline-offset: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="dotted">A dotted outline</p>
+    <p class="dashed">A dashed outline</p>
+    <p class="solid">A solid outline</p>
+    <p class="double">A double outline</p>
+    <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+    <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+    <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+    <p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+    <p class="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, nemo? Sapiente nulla ex laboriosam
+        impedit maiores amet! Rem nisi in sint dicta doloremque. Explicabo id ducimus doloremque, mollitia illo eius!
+    </p>
+</body>
+
+</html>

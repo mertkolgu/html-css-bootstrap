@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 - Transition</title>
+    <style>
+        .div1 {
+            background-color: orange;
+            height: 150px;
+            width: 150px;
+            color: white;
+            font-size: 2rem;
+            /* transition: color 1s, background-color 3s;
+            transition: all 5s;
+            transition: 4s cubic-bezier(0, 0.86, 0.36, 1) 2s;
+            transition-delay: 1s;
+            transition-timing-function: ease-out;
+            transition-duration: 4s;
+            transition-property: color, background-color;
+            transition-property: all; */
+            transition: height 2s 1s, width 2s 4s;
+        }
+
+        .div1:hover {
+            background-color: teal;
+            color: black;
+            height: 300px;
+            width: 300px;
+        }
+
+        .div2 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s, height 4s;
+        }
+
+        .div2:hover {
+            width: 300px;
+            height: 300px;
+        }
+
+        .divt {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s;
+            transition-delay: 1s;
+        }
+
+        .div3 {
+            transition-timing-function: linear;
+        }
+
+        .div4 {
+            transition-timing-function: ease;
+        }
+
+        .div5 {
+            transition-timing-function: ease-in;
+        }
+
+        .div6 {
+            transition-timing-function: ease-out;
+        }
+
+        .div7 {
+            transition-timing-function: ease-in-out;
+        }
+
+        .divt:hover {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Div</div><br>
+    <div class="div2"></div><br>
+    <div class="divt div3">linear</div><br>
+    <div class="divt div4">ease</div><br>
+    <div class="divt div5">ease-in</div><br>
+    <div class="divt div6">ease-out</div><br>
+    <div class="divt div7">ease-in-out</div><br>
+</body>
+
+</html>

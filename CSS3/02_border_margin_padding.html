@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 - Border & Margin & Padding</title>
+    <style>
+        .dotted {
+            border-style: dotted;
+            border-width: 5px;
+            border-color: red;
+        }
+
+        .dashed {
+            border-style: dashed;
+            border-width: medium;
+            border-color: greenyellow;
+        }
+
+        .solid {
+            border-style: solid;
+            border-width: thick;
+            border-color: blue;
+            border-top-style: dashed;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: double;
+        }
+
+        .double {
+            border-style: double;
+        }
+
+        .groove {
+            border-style: groove;
+            border: 5px groove red;
+        }
+
+        .ridge {
+            border-style: ridge;
+        }
+
+        .inset {
+            border-style: inset;
+        }
+
+        .outset {
+            border-style: outset;
+        }
+
+        .none {
+            border-style: none;
+        }
+
+        .hidden {
+            border-style: hidden;
+        }
+
+        .mix {
+            border-style: dotted dashed solid double;
+            border-width: 15px 2px 4px 5px;
+            border-color: blue yellow red green;
+            padding: 20px 30px 50px 60px;
+        }
+
+        #p1 {
+            border-style: dotted;
+            border-style: groove;
+            border-style: solid;
+            border-color: blueviolet;
+            border-width: 5px;
+            padding: 20px;
+            margin: 100px 20px 30px 40px;
+            border: 2px red solid;
+        }
+
+        #p2 {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 30px;
+            border: 5px green solid;
+            padding: 20px;
+            border-width: 10px 30px;
+        }
+
+        #p3 {
+            margin: 30px;
+            border-top: 5px blue solid;
+            border-bottom: 15px teal solid;
+            border-left: 3px solid;
+            border-right: 2px solid;
+            border-color: red blue purple black;
+            border-style: dotted dashed;
+            padding: 20px;
+        }
+
+        #p4 {
+            margin: 80px 60px;
+            border: 3px red solid;
+            border-top-left-radius: 30px;
+            border-radius: 30px;
+            padding: 15px;
+        }
+
+        .left {
+            border-left: 6px solid red;
+            background-color: lightgray;
+            border-bottom: 6px solid red;
+        }
+
+        #orta {
+            width: 300px;
+            background-color: purple;
+            height: 300px;
+            margin: auto;
+            padding: 50px;
+            box-sizing: border-box;
+            padding: 30px 30px;
+        }
+
+        .div2 {
+            border: 5px solid red;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        .inherit {
+            margin: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+    <p id="p1">Bu paragraf 1</p>
+    <p id="p2">Bu paragraf 2</p>
+    <p id="p3">Bu paragraf 3</p>
+    <p id="p4">Bu paragraf 4</p>
+    <p class="left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus iusto, dignissimos aut in
+        voluptatum a officiis enim provident praesentium ipsam deleniti deserunt atque eos illum dolorem error
+        reprehenderit. Ex, corrupti?
+    </p>
+
+    <div id="orta">Ortalanacak Yapı Ortalanacak Yapı Ortalanacak Yapı Ortalanacak Yapı</div>
+
+    <div class="div2">
+        <p class="inherit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi odio veniam itaque natus
+            incidunt officia distinctio perferendis, quaerat placeat quasi illo eligendi fuga iure in accusantium quas?
+            Tenetur, suscipit! Deleniti.</p>
+    </div>
+</body>
+
+</html>

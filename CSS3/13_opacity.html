@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 - Opacity</title>
+    <style>
+        .img {
+            opacity: 0.5;
+        }
+
+        .img:hover {
+            opacity: 1.0;
+        }
+
+        .img1:hover {
+            opacity: 0.5;
+        }
+
+        div {
+            background-color: #4CAF50;
+            padding: 20px;
+            background: rgba(76, 175, 80)
+        }
+
+        .bir {
+            opacity: 0.1;
+            background: rgba(76, 175, 80, 0.1)
+        }
+
+        .iki {
+            opacity: 0.3;
+            background: rgba(76, 175, 80, 0.3)
+        }
+
+        .uc {
+            opacity: 0.6;
+            background: rgba(76, 175, 80, 0.6)
+        }
+    </style>
+</head>
+
+<body>
+    <img class="img" src="https://source.unsplash.com/140x140" alt="">
+    <img class="img" src="https://source.unsplash.com/140x139" alt="">
+    <img class="img" src="https://source.unsplash.com/140x138" alt=""><br>
+
+    <img class="img1" src="https://source.unsplash.com/140x140" alt="">
+    <img class="img1" src="https://source.unsplash.com/140x139" alt="">
+    <img class="img1" src="https://source.unsplash.com/140x138" alt=""><br>
+
+    <div class="bir">
+        <p>opacity 0.1</p>
+    </div>
+    <div class="iki">
+        <p>opacity 0.3</p>
+    </div>
+    <div class="uc">
+        <p>opacity 0.6</p>
+    </div>
+    <div>
+        <p>opacity 1.0</p>
+    </div>
+</body>
+
+</html>

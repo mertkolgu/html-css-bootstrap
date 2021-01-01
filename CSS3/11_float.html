@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 - Float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .image1 {
+            float: left;
+        }
+
+        .image2 {
+            float: right;
+        }
+
+        .image3 {
+            float: right;
+        }
+
+        p {
+            clear: right;
+        }
+
+        .div {
+            border: 3px solid green;
+            padding: 5px;
+        }
+
+        .image4 {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .image5 {
+            float: right;
+        }
+
+        .box {
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+        }
+
+        .img-container {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: dodgerblue;
+        }
+
+        .container-box {
+            background-color: #f1f1f1;
+            width: 50%;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111111;
+        }
+
+        li a:active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="image1" src="https://source.unsplash.com/140x140" alt="img1">
+    <img class="image2" src="https://source.unsplash.com/100x100" alt="img2">
+    <img class="image3" src="https://source.unsplash.com/110x110" alt="img3">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum odit reprehenderit distinctio tempore
+        quos quasi ullam porro fugit aspernatur dignissimos dolores illum modi quae quas asperiores officiis! Obcaecati
+        fugit quisquam doloremque nostrum. Minus atque reiciendis aspernatur velit facilis! Minima, quidem, blanditiis
+        quod corporis consequatur voluptatem praesentium hic earum beatae accusamus eligendi aspernatur? Dolore laborum
+        ex placeat sunt a unde, eveniet itaque nostrum voluptatem perferendis harum, id quia consequuntur architecto
+        assumenda aliquam et ducimus, animi porro tempore necessitatibus fugit! Repudiandae nostrum autem quibusdam
+        dolore libero tenetur suscipit laudantium iste, consequuntur laboriosam, sapiente ad doloremque iure modi saepe
+        alias officia placeat?</p>
+
+    <div class="div">
+        <img class="image4" src="https://source.unsplash.com/120x120" alt="img4"> Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Soluta vel amet architecto sed facere tempore ipsum accusantium dolores rerum
+        fugiat dolor iusto fugit, voluptates alias quod eum, maxime aliquam quae!
+    </div><br><br><br><br><br>
+
+    <div class="div clearfix">
+        <img class="image5" src="https://source.unsplash.com/120x120" alt="img5"> Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Soluta vel amet architecto sed facere tempore ipsum accusantium dolores rerum
+        fugiat dolor iusto fugit, voluptates alias quod eum, maxime aliquam quae!
+    </div><br><br><br>
+
+    <div class="clearfix">
+        <div class="box" style="background-color: #bbb;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quisquam!</p>
+        </div>
+        <div class="box" style="background-color: #ccc;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quisquam!</p>
+        </div>
+        <div class="box" style="background-color: #ddd;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quisquam!</p>
+        </div>
+    </div><br><br><br>
+
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="https://source.unsplash.com/100x120" alt="img" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="https://source.unsplash.com/101x120" alt="img" style="width: 100%;">
+        </div>
+        <div class="img-container">
+            <img src="https://source.unsplash.com/102x120" alt="img" style="width: 100%;">
+        </div>
+    </div><br><br><br>
+
+    <div class="flex-container">
+        <div class="container-box">Box 1 - This is some text to make sure that the content gets really tall. This is
+            some text to make sure that the content gets really tall.</div>
+        <div class="container-box">Box 2 - My height will follow Box 1.</div>
+    </div><br><br><br>
+
+    <ul>
+        <li><a href="#">Ansayfa</a></li>
+        <li><a href="#">Haberler</a></li>
+        <li><a href="#">İletişim</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+    </ul>
+</body>
+
+</html>

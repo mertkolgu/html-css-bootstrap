@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 - Tables</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            height: 50px;
+            vertical-align: bottom;
+            padding: 20px;
+        }
+
+        table {
+            width: 900px;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+        }
+
+        div {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+            </tr>
+            <tr>
+                <td>Mert</td>
+                <td>Kolğu</td>
+            </tr>
+            <tr>
+                <td>Mert</td>
+                <td>Kolğu</td>
+            </tr>
+            <tr>
+                <td>Mert</td>
+                <td>Kolğu</td>
+            </tr>
+            <tr>
+                <td>Mert</td>
+                <td>Kolğu</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
