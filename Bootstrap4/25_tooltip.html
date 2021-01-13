@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4 - Tooltip</title>
+    <link rel="stylesheet" href="/bootstrap-4.5.3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container"><br><br>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+            title="Tooltip">BUTTON</button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left"
+            title="Tooltip">BUTTON</button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right"
+            title="Tooltip">BUTTON</button>
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+            title="Tooltip">BUTTON</button>
+
+    </div>
+
+    <script src="/bootstrap-4.5.3/js/jquery-3.5.1.min.js"></script>
+    <script src="/bootstrap-4.5.3/js/popper.min.js"></script>
+    <script src="/bootstrap-4.5.3/js/bootstrap.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
